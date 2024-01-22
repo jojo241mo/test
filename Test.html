@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Site Web Test 1</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align:left;
+            margin: 50px;
+        }
+
+        #lienNouvellePage {
+            cursor: pointer; /* Change le curseur au survol pour indiquer que c'est cliquable */
+            color: #0066cc;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+        header img {
+            max-width: 100%; /* Assurez-vous que l'image ne dépasse pas la largeur de l'en-tête */
+            height: auto; /* Garantit que l'image conserve ses proportions */
+        }
+        nav {
+            background-color: #333; /* Couleur de fond de la barre de menu */
+            overflow: hidden;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        nav li {
+            float: left;
+        }
+
+        nav a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><span style="background-color: brown;">Site Web Test 1</span></h1>
+    <form action="/rechercher" method="get">
+        <input type="text" name="q" placeholder="Rechercher...">
+        <input type="submit" value="Rechercher">
+        </form>
+
+    <!-- Ajoutez votre script JavaScript -->
+    <script>
+        // Récupérer l'élément avec l'ID lienNouvellePage
+        var lienNouvellePage = document.getElementById('lienNouvellePage');
+
+        // Ajouter un gestionnaire d'événement de clic
+        lienNouvellePage.onclick = function() {
+            // Naviguer vers une nouvelle page (modifier l'URL selon vos besoins)
+            window.location.href = 'momojovsic97@gmail.com';
+        };
+    </script>
+
+        <nav>
+            <ul>
+                <li><a href="#Accueil">Accueil</a></li>
+                <li><a href="#Destinations">Destinations</a></li>
+                <li><a href="#Activites">Activités</a></li>
+                <li><a href="#Vos Coordonnées">Vos coordonnées</a></li>
+                <a href="https://www.momo@gmail.com" targer="_blank">pour tout information!!</a>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="Accueil">
+        <h2>Bienvenue dans le monde de l'aventure</h2>
+        <p>Découvrez des destinations incroyables et vivez des expériences inoubliables.</p>
+        <a href="#destinations" class="cta-button">Explorez maintenant</a>
+    </section>
+
+    <section id="Destinations">
+        <h2><span style="background-color: brown;">Les Sensation</span></h2>
+        <div class="Destinations">
+            <img src="toile.png" alt="Port-gentil">
+            <h3>Découverte</h3>
+            <p>Explorez les mystères de cette destination fascinante.</p>
+        </div>
+        <div class="Destinations">
+            <img src="Tota.jpg" alt="vers Lbreville">
+            <h3>Frisson</h3>
+            <p>Découvrez l'aventure dans un cadre spectaculaire.</p>
+        </div>
+    </section>
+
+    <section id="Activites">
+        <h2><span style="background-color: brown;">Activités Aventure</span></h2>
+        <ul>
+            <li>Randonnée en montagne</li>
+            <div class="Randonner en montagne">
+                <img src="fotolia_56569523_s.jpg" alt="Randonner">
+                <h3>Emmotion</h3>
+                <p>Laisser nous vous guider dans ce defit</p>
+            </div>
+            <li>Plongée sous-marine</li>
+            <div class="Plongée sous-marine">
+                <img src="aqua.jpg" alt="Plongée">
+                <p>Plongée dans de vaste beautée soumarine</p>
+            <li>Escalade de rochers</li>
+            <li>Exploration de la jungle</li>
+        </ul>
+    </section>
+
+    <section id="Vos Coordonnées">
+        <h2><span style="background-color: brown;">Contactez-nous</span></h2>
+        <p>Pour toute question ou réservation, n'hésitez pas à nous contacter.</p>
+        <form>
+            <label for="nom">Nom // Prenom:</label>
+            <input type="text" id="nom" name="nom" required>
+
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message :</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <input type="submit" value="Envoyer">
+        </form>
+        <a href="https://www.momojovsic97@gmail.com" targer="_blank">Envoyer</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Aventure Parfaite. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
